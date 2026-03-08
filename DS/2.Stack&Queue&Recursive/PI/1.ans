@@ -1,0 +1,6 @@
+Case 1: K = 3, limit = 100, number of terms = 8
+Case 2: K = 34, limit = 100, number of terms = 14
+Case 3: K = 75, limit = 250, number of terms = 3
+Case 4: K = 27, limit = 2147483647, number of terms = 112
+Case 5: K = 101, limit = 304, number of terms = 26
+Case 6: K = 101, limit = 303, number of terms = 1
