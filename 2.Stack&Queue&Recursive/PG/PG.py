@@ -7,7 +7,8 @@ def cycle_length(n):
         return cycle_length(n // 2) + 1
 
 while True:
-    n = int(input())
-    if n == 0:
+    try: 
+        n = int(input())
+        print(cycle_length(n))
+    except EOFError:
         break
-    print(cycle_length(n))
