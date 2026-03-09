@@ -23,6 +23,7 @@ while True:
                 curr_word = '' # 重置
             response.append(c)
 
+    # 處理尾端沒有標點的題目
     if curr_word:
         # 如果單字已經在書裡又被用到，把它放到第一個
         if curr_word in book:
