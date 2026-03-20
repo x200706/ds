@@ -14,7 +14,6 @@ while idx < len(lines):
     process_q = deque()
     limit = N  
     
-    # 核心调度逻辑
     while input_q:
         if len(process_q) < limit:
             process_q.append(input_q.popleft())
