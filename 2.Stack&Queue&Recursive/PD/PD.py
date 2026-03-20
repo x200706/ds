@@ -10,6 +10,7 @@ for _ in range(n):
     idx += 1
     names = lines[idx].split()
     idx += 1
+    # 以上都只是輸入前處理
     q = deque(names)
     while len(q) > 1:
         q.append(q.popleft())
