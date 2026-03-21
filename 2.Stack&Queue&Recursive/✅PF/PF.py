@@ -13,12 +13,8 @@ for line in sys.stdin:
 
 i = 0
 while i < len(lines):
-    if ' ' in lines[i]:
-        m, n = map(int, lines[i].split())
-        i += 1
-    else:
-        m = int(lines[i])
-        n = int(lines[i+1])
-        i += 2
+    m = int(lines[i])
+    n = int(lines[i+1])
+    i += 2
     res = hanoi_recursive(m, n)
     print(res)
