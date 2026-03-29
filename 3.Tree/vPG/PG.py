@@ -1,5 +1,3 @@
-import sys
-
 def build_postorder(pre, ino):
     if not pre:
         return ''
@@ -10,15 +8,13 @@ def build_postorder(pre, ino):
     return left + right + root
 
 def solve():
-    data = sys.stdin.read().split()
-    idx = 0
-    c = int(data[idx]); idx += 1
-    results = []
-    for _ in range(c):
-        n = int(data[idx]); idx += 1
-        pre = data[idx]; idx += 1
-        ino = data[idx]; idx += 1
-        results.append(build_postorder(pre, ino))
-    print('\n'.join(results))
+    T = int(input())
+    for _ in range(T):
+        # 同一行有 3 個值：n 前序 中序
+        parts = input().split()
+        n = parts[0]
+        pre = parts[1]
+        ino = parts[2]
+        print(build_postorder(pre, ino))
 
 solve()
